@@ -69,7 +69,7 @@ A separação entre `src/app.ts` (configuração do Express) e `src/server.ts` (
 
 Os dados (usuários, contas e transações) são mantidos **em memória**, organizados através de `repositories`. Essa camada isola o acesso aos dados para que, futuramente, seja simples substituir o armazenamento em memória por um banco de dados real (PostgreSQL, MongoDB, etc.) sem alterar controllers ou services.
 
-> ⚠️ **Importante:** em ambientes serverless (como a Vercel), cada invocação pode rodar em uma instância diferente da função, então os dados em memória **não são persistentes** entre requisições em produção. Esta versão do projeto não deve ser tratada como um banco de dados de produção real — é uma demonstração dos conceitos de API REST, TypeScript e arquitetura em camadas.
+>  **Importante:** em ambientes serverless (como a Vercel), cada invocação pode rodar em uma instância diferente da função, então os dados em memória **não são persistentes** entre requisições em produção. Esta versão do projeto não deve ser tratada como um banco de dados de produção real — é uma demonstração dos conceitos de API REST, TypeScript e arquitetura em camadas.
 
 ## Instalação
 
