@@ -74,8 +74,8 @@ Os dados (usuários, contas e transações) são mantidos **em memória**, organ
 ## Instalação
 
 ```bash
-git clone https://github.com/SEU-USUARIO/dio-bank-api.git
-cd dio-bank-api
+git clone https://github.com/Filipcardos/digital-bank-api.git
+cd digital-bank-api
 npm install
 ```
 
@@ -223,17 +223,9 @@ curl http://localhost:3000/accounts/629dd34d-6a2c-43a8-9287-1c9754e0124a/balance
 
 ## Deploy na Vercel
 
-1. Crie um repositório no GitHub e envie o projeto:
-   ```bash
-   git init
-   git add .
-   git commit -m "chore: initial commit"
-   git branch -M main
-   git remote add origin https://github.com/SEU-USUARIO/dio-bank-api.git
-   git push -u origin main
-   ```
+1. Faça um fork deste repositório na sua conta do GitHub.
 2. Acesse [vercel.com](https://vercel.com) e faça login com sua conta GitHub.
-3. Clique em **"Add New… → Project"** e importe o repositório recém-criado.
+3. Clique em **"Add New… → Project"** e importe o seu fork.
 4. A Vercel detecta o `vercel.json` automaticamente — não é necessário configurar build command nem output directory (o framework preset pode ficar como "Other").
 5. Clique em **Deploy**.
 6. Após a conclusão, teste o endpoint de health check:
